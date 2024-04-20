@@ -1,0 +1,65 @@
+@font-face{
+    font-family: "clash display";
+    font-weight: 200;
+}
+@font-face{
+    font-family: "clash display";
+    font-weight: 400;
+}
+@font-face{
+    font-family: "clash display";
+    font-weight: 600;
+}
+@font-face{
+    font-family: "clash display";
+    font-weight: 900;
+}
+
+span{
+    font-family: "clash display";
+    font-weight: none;
+    color: rgb(14, 1, 1);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+--color-white:
+--color-black:
+--color-lite-gray:
+--color-dark-primary:
+--color-nav-links:
+}
+
+header{
+    display: grid;
+    row-gap: 20px;
+    padding: 0 2vh;
+    padding-top: 20px;
+}
+
+header>div span{
+    justify-self: center;
+    font-size: 24px;
+}
+
+header>div{
+    display: grid;
+    grid-template-columns:repeat(3,1fr) ;
+    grid-template-rows: 16px;
+}
+header>div svg{
+    height: 100%;
+}
+header nav ul{
+    list-style-type: none;
+display: flex;
+column-gap: 4vw;
+}
+header nav ul a{
+    text-decoration: none;
+    color:gray;
+
+}

@@ -1,0 +1,175 @@
+@font-face {
+    font-family: "Clash Display";
+    src: url(../fonts/ClashDisplay-Light.woff2);
+    font-weight: 200;
+ }
+ 
+ @font-face {
+    font-family: "Clash Display";
+    src: url(../fonts/ClashDisplay-Regular.woff2);
+    font-weight: 400;
+ }
+ 
+ @font-face {
+    font-family: "Clash Display";
+    src: url(../fonts/ClashDisplay-Semibold.woff2);
+    font-weight: 600;
+ }
+ 
+ @font-face {
+    font-family: "Clash Display";
+    src: url(../fonts/ClashDisplay-Bold.woff2);
+    font-weight: 900;
+ }
+ 
+ @font-face {
+    font-family: Satoshi;
+    src: url(../fonts/Satoshi-Regular.woff2);
+    font-weight: 400;
+ }
+ 
+ 
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ 
+ :root {
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-lite-gray: #F9F9F9;
+    --color-dark-primary: #2A254B;
+    --color-nav-links: #726E8D;
+ }
+header>div{
+ font-family:Satoshi;
+ font-size: 14px;
+background-color: var(--color-dark-primary);
+color: var(--color-white);
+display: grid;
+grid-template-columns: 1fr 24px;
+padding: 11px 9px;
+align-items: center;
+}
+header div p{
+    display: flex;
+    grid-template-columns: 16px 1fr;
+    column-gap: 8px;
+    justify-self: center;
+}
+header section{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    padding: 30px 80px;
+}
+header section>a{
+    font-family: "Clash Display";
+    text-decoration: none;
+    color: rgb(8, 8, 53);
+}
+
+header section nav{
+    justify-self: center;
+}
+
+header section ul{
+    display: flex;
+    list-style-type: none;
+    column-gap: 4vw;
+}
+
+header section ul a{
+    text-decoration: none;
+    color: var(--color-nav-links);
+    font-family:Satoshi ;
+    font-size: 16px;
+}
+
+main section.decor{
+    padding: 50px 8vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 38vw;
+column-gap: 6vw;
+align-items: center;
+}
+main section.decor img{
+height:100%;
+width: 100%;
+object-fit: cover;
+}
+main section.decor div.dimens{
+    display: grid;
+    align-items: center;
+    grid-template-columns: max-content 1px max-content 1px max-content;
+}
+main section.decor div.dimen div{
+    background-color: black;
+    height: 50%;
+}
+main section.decor div.dimen p{
+    display: grid;
+}
+main section.decor div.q{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 46px;
+background-color: var(--color-white);
+justify-content: center;
+align-items: center;
+}
+@media screen and (max-width:390px){
+    header>div{
+        background:red ;
+    }
+    header>div p{
+align-items: center;
+    }
+    header section{
+        grid-template-columns: 1fr 1fr;
+    }
+    header section nav{
+        display: none;
+    }
+    main section.decor{
+        grid-template-columns: 1fr;
+        padding: 1vw;
+    }
+    main section.decor div.button{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    main section.decor div.button a{
+        text-align: center;
+    }
+    main section.alsolove div{
+        padding: 1vw;
+grid-template-columns: repeat(2, 1fr);
+row-gap: 100px;
+    }
+    main section.alsolove div article:first-child{
+        grid-column: 1/3;
+    }
+    main section.brand div{
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+}
+    main section.bonefit div form{
+        grid-template-columns: 4fr 1fr;
+        }
+    main section.brand div{
+        display: grid;
+        row-gap: 10px;
+    }
+    main section.brand div p{
+        padding-bottom: 0;
+    }
+    footer header{
+        grid-template-columns: repeat(2,1fr);
+    }
+    footer header ul:nth-child(4){
+        display: none;
+    }
+}
+

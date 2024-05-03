@@ -1,134 +1,38 @@
-@font-face{
-    font-family: "clash display";
-    font-weight: 200;
-}
-@font-face{
-    font-family: "clash display";
-    font-weight: 400;
-}
-@font-face{
-    font-family: "clash display";
-    font-weight: 600;
-}
-@font-face{
-    font-family: "clash display";
-    font-weight: 900;
-}
-
-span{
-    font-family: "clash display";
-    font-weight: none;
-    color: rgb(14, 1, 1);
-}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-:root{
---color-white:
---color-black:
---color-lite-gray:
---color-dark-primary:
---color-nav-links:
-}
-
-.btn{
-    text-decoration: none;
-    color: black;
-    background-color: rgb(243, 243, 243);
-    padding: 16px 32px;
-    font-size: 16px;
-}
-
-.btn:hover{
-    color: rgb(228, 228, 228);
-    background-color: black;
-    transition: all 0.8s;
-}
-
-
-header{
+ }
+ header {
+    background-color: rgb(155, 205, 252);
     display: grid;
     row-gap: 20px;
-    padding: 20px 2vh;
-    padding-top: 20px;
-}
-
-header>div span{
-    justify-self: center;
-    font-size: 24px;
-}
-
-header>div{
+    padding: 12px 2vw;
+ }
+ header div.title{
+    color: red;
+ }
+ header>div{
     display: grid;
-    grid-template-columns:repeat(3,1fr) ;
-    grid-template-rows: 16px;
-}
-header>div svg{
-    height: 100%;
-}
-header nav ul{
-    list-style-type: none;
-display: flex;
-column-gap: 4vw;
-}
-header nav ul a{
-    text-decoration: none;
-    color:gray;
-
-}
-
-main section.header{
-    background-image: url(../images/table.jpg);
-    height: 42vw;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position:10% 40% ;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(30,2fr);
     align-items: center;
-    padding-right: 8vw;
-}
-
-main section.header div{
-    display: grid;
-    row-gap: 20px;
-    background-color: white;
-    grid-column: 2/3;
-    height: 64%;
-    padding: 5vw;
-}
-main section.header div h1{
-    font-size: 32px;
-    font-weight: 400;
-}
-
-main section.header div span{
-    font-size: 18px;
-}
-main section.header div a{
-    align-self: end;
-    justify-self: start;
-}
-
-main section.our-brend{
-    padding: 80px 6vw;
-    display: grid;
-    row-gap: 36px;
-}
-main section.our-brend h2{
-    font-size: 28px;
+ }
+ main section.h{
+    background-image:url(../images/закат.webp) ;
+    height: 45vw;
+    background-size: cover;
+ }
+ main section.h div.w h1{
+    color: white;
     text-align: center;
-    font-weight:400;
-}
-main section.our-brend div{
+ }
+ a{
+    color: white;
+    text-decoration: none;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 2vw;
-}
-main section.our-brend div article{
-    display: grid;
-    grid-template-rows: 24px repeat(2, 1fr);
-}
-
+ }
+ main section.h div.w ul{
+    text-align: center;
+    padding: 8px 10px;
+ }
+ 
